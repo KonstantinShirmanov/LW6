@@ -310,6 +310,11 @@ function cols (){
 	}
 }
 
+function register(){
+	var modal = document.getElementById("modal");
+	modal.style.display ="block";
+}
+
 function post (){
 	var modal = document.getElementById("modal");
 	modal.style.display ="none";
