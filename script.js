@@ -223,7 +223,7 @@ function changeColor (){
 	var colors = document.getElementsByName("backgroundColorList")[0];
 	var options = document.getElementsByTagName('option');
 	var text = options [colors.selectedIndex].innerHTML;
-	document.body.style.backgroundColor = options.value;
+	document.body.style.backgroundColor = colors.value;
 	var header = document.getElementById("colorHeader");
 	header.innerHTML = "Текущий цвет — " + text
 }
