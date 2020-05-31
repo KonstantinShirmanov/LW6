@@ -300,7 +300,7 @@ function cols (){
 	var table = document.getElementById("tbl");
 	var rows = table.getElementsByTagName("tr");
 	for (var i =0; i < rows.length; i++) {
-		var columns = row[i].getElemenmentsByTagName("td");
+		var columns = row[i].getElementsByTagName("td");
 		var sum = 0;
 		for (var j =0; j<collumns.length-1; j++) if (!isNaN(columns[j].innerHTML)) sum+= +columns[j];
 			columns[colums.length-1].innerHTML=sum;
