@@ -303,9 +303,9 @@ function cols (){
 		var columns = rows[i].getElementsByTagName("td");
 		var sum = 0;
 		for (var j =0; j<columns.length-1; j++) if (!isNaN(columns[j].innerHTML)) sum+= +columns[j];
-			columns[colums.length-1].innerHTML=sum;
+			columns[columns.length-1].innerHTML=sum;
 
-		if (sum %2 == 0) row[i].style.backgroundColor = "lightgray";
-		else row[i].style.backgroundColor = "lightblue";
+		if (sum %2 == 0) rows[i].style.backgroundColor = "lightgray";
+		else rows[i].style.backgroundColor = "lightblue";
 	}
 }
