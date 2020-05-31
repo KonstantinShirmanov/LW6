@@ -249,10 +249,8 @@ function formatPage (){
 		var ulArray = document.getElementsByTagName("ul");
 		for (var i =0; i< ulArray.length; i++){
 			var liArray = document.getElementsByTagName("li");
-			for (var j = 0; j < liArray.length; j++){
-				if (liArray[j]% 2 ==0)
+			for (var j = 0; j < liArray.length; j+=2){
 				liArray[j].style.cssText = "border : solid 1px red";
-
 				
 			} 
 		}
