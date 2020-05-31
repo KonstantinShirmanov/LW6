@@ -241,7 +241,7 @@ function formatPage (){
 
 		case 1 :
 		var ulArray = document.getElementsByTagName("ul");
-		for (var i = 0; i< ulArray.length; i++) ulArray[i].children.style.fontSize = "28px";
+		for (var i = 0; i< ulArray.length; i++) ulArray[i].children[0].style.fontSize = "28px";
 		break;
 
 		case 2 :
