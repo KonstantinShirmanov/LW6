@@ -298,7 +298,7 @@ function spoyler (){
 
 function cols (){
 	var table = document.getElementById("tbl");
-	var rows = table.getElentsByTagName("tr");
+	var rows = table.getElementsByTagName("tr");
 	for (var i =0; i < rows.length; i++) {
 		var columns = row[i].getElementsByTagName("td");
 		var sum = 0;
