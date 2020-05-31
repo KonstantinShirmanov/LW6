@@ -219,6 +219,58 @@ function precision (){
 	document.getElementById("result").value = output;		
 }
 
+function changeColor (){
+	var colors = document.getElementsById("backgroundColorList")[0];
+	document.body.style.backgroundColor.color.value;
+	var options = document.getElementsByTagName('option');
+	var text = options [colors.selectedIndex].innerHTML;
+	var header = document.getElementById("colorHeader");
+	header.innerHTML = "Текущий цвет — " + text
+}
+
+function formatPage (){
+	var options = document.getElementsByName("R1");
+	for (var i =0; i < options.length; i++) if (options[i].checked){var key = i ; break;}
+
+	switch (key){
+		case 0 : 
+
+		var pArray = document.getElementsByTagName("p");
+		for (var i =0; i < pArray.length; i+=2) pArray[i].className = "background-gray";
+		break;
+
+		case 1 :
+		var ulArray = document.getElementsByTagName("ul");
+		for (var i = 0; i< ulArray.length; i++) ulArray[i].children.style.fontSize = "28px";
+		break;
+
+		case 2 :
+
+		var ulArray = document.getElementsByTagName("ul");
+		for (var i =0; i< ulArray.length; i++){
+			var liArray = document.getElementsByTagName("li");
+			for (var j = 0; j < liArray.length; j+=2){
+				liArray[j].style.cssText = "border : solid 1px red";
+				
+			} 
+		}
+
+		break;  
+
+
+		case 3 : 
+
+		var spanArray = document.getElementsByTagName("span");
+		var text = prompt ("Введите текст :")ж
+
+		for (var i =0; i< spanArray.length; i++){
+			spanArray[i].innerHTML = text;
+			spanArray[i].style.color = "blue";
+		}
+		break;
+	}  
+}
+
 
 
 
