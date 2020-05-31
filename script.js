@@ -304,8 +304,8 @@ function cols (){
 		var sum = 0;
 		for (var j =0; j<columns.length; j++){ 
 			 
-			if (!isNaN(columns[j].innerHTML)) sum = columns[j];
-			columns[columns.length-1].innerHTML= +sum;
+			if (!isNaN(columns[j].innerHTML)) sum+ = parseInt( columns[j].innerHTML);
+			parseInt (columns[columns.length-1].innerHTML) = +sum;
 		}
 
 		if (sum %2 == 0) rows[i].style.backgroundColor = "lightgray";
