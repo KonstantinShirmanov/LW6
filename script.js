@@ -297,7 +297,7 @@ function spoyler (){
 }
 
 function cols (){
-	var table = document.getElementById("tbl1");
+	var table = document.getElementById("tbl");
 	var rows = tbl1.getElentsByTagName("tr");
 	for (var i =0; i < rows.length; i++) {
 		var columns = row[i].getElementsByTagName("td");
@@ -309,7 +309,3 @@ function cols (){
 		else row[i].style.backgroundColor = "lightblue";
 	}
 }
-
-
-
-
