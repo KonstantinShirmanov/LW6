@@ -295,7 +295,7 @@ function spoyler (){
 		button.value = "+";
 	}
 }
-// do commit
+
 function cols (){
 	var table = document.getElementById("tbl");
 	var rows = table.getElementsByTagName("tr");
@@ -308,4 +308,9 @@ function cols (){
 		if (sum %2 == 0) rows[i].style.backgroundColor = "lightgray";
 		else rows[i].style.backgroundColor = "lightblue";
 	}
+}
+
+function post (){
+	var modal = document.getElementById("modal");
+	modal.style.display ="none";
 }
