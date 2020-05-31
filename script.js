@@ -282,7 +282,7 @@ function appendUl (){
 	}
 }
 
-function spoiler (){
+function spoyler (){
 	var button = document.getElementsByName('b1')[0];
 	var split = document.getElementById("spoyler");
 
