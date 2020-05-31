@@ -304,7 +304,7 @@ function cols (){
 		var sum = 0;
 		for (var j =0; j<columns.length; j++){ 
 			 
-			if (!isNaN(parseInt(columns[j].innerHTML))) sum+ = parseInt( columns[j].innerHTML);
+			if (!isNaN(parseInt(columns[j].innerHTML))) sum+= parseInt( columns[j].innerHTML);
 			columns[columns.length-1].innerHTML = +sum;
 		}
 
