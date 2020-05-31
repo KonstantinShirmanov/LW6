@@ -251,7 +251,6 @@ function formatPage (){
 			var liArray = document.getElementsByTagName("li");
 			for (var j = 0; j < liArray.length; j+=2){
 				liArray[j].style.cssText = "border : solid 1px red";
-				
 			} 
 		}
 
@@ -269,6 +268,19 @@ function formatPage (){
 		}
 		break;
 	}  
+}
+
+function appendUl (){
+	var ul = document.getElementsByTagName("ul")[3];
+	var text = prompt ("Введите текст: ");
+
+	if (text !="" && text !=null){
+		var newli = document.createElement ("li");
+		newli.innerHTML=text;
+		ul.appendChild(newli);
+
+	}
+
 }
 
 
