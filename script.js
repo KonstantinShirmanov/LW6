@@ -296,6 +296,20 @@ function spoyler (){
 	}
 }
 
+function cols (){
+	var table = document.getElementById("tbl1");
+	var rows = tbl1.getElentsByTagName("tr");
+	for (var i =0; i < rows.length; i++) {
+		var columns = row[i].getElementsByTagName("td");
+		var sum = 0;
+		for (var j =0; j<collumns.length-1; j++) if (!isNaN(columns[j].innerHTML)) sum+= +columns[j];
+			columns[colums.length-1].innerHTML=sum;
+
+		if (sum %2 == 0) row[i].style.backgroundColor = "lightgray";
+		else row[i].style.backgroundColor = "lightblue";
+	}
+}
+
 
 
 
