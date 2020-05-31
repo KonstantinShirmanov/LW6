@@ -295,7 +295,7 @@ function spoyler (){
 		button.value = "+";
 	}
 }
-
+// do commit
 function cols (){
 	var table = document.getElementById("tbl");
 	var rows = table.getElementsByTagName("tr");
