@@ -179,4 +179,24 @@ height: 15px;
 width: 15px;
 padding: 0px; 
 }
- 
+
+#modal {
+  background-color: rgba(255, 120, 120, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: none;
+}
+
+#modal form {
+  margin : 50px auto 0px;
+  padding: 10px;
+  width : 280px;
+  background: #609;
+  text-align: center;
+} 
+
+.registrationButton {
+  width : 100px;
+  text-align: center;
+}
