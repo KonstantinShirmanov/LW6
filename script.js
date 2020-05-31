@@ -280,9 +280,21 @@ function appendUl (){
 		ul.appendChild(newli);
 
 	}
-
 }
 
+function spoiler (){
+	var button = document.getElementsByName('b1')[0];
+	var split = document.getElementById("spoyler");
+
+	if (button.value == "+"){
+		split.style.display = "block";
+		button.value = "-" 
+	}
+	else {
+		split.style.display = "none";
+		button.value = "+";
+	}
+}
 
 
 
