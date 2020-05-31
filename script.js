@@ -261,7 +261,7 @@ function formatPage (){
 		case 3 : 
 
 		var spanArray = document.getElementsByTagName("span");
-		var text = prompt ("Введите текст :")ж
+		var text = prompt ("Введите текст :");
 
 		for (var i =0; i< spanArray.length; i++){
 			spanArray[i].innerHTML = text;
