@@ -221,7 +221,7 @@ function precision (){
 
 function changeColor (){
 	var colors = document.getElementsByName("backgroundColorList")[0];
-	document.body.style.backgroundColor = color.value;
+	document.body.style.backgroundColor = colors.value;
 	var options = document.getElementsByTagName('option');
 	var text = options [colors.selectedIndex].innerHTML;
 	var header = document.getElementById("colorHeader");
