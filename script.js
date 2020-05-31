@@ -221,9 +221,9 @@ function precision (){
 
 function changeColor (){
 	var colors = document.getElementsByName("backgroundColorList")[0];
-	document.body.style.backgroundColor = colors.value;
 	var options = document.getElementsByTagName('option');
 	var text = options [colors.selectedIndex].innerHTML;
+	document.body.style.backgroundColor = options.value;
 	var header = document.getElementById("colorHeader");
 	header.innerHTML = "Текущий цвет — " + text
 }
