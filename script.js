@@ -302,7 +302,7 @@ function cols (){
 	for (var i =0; i < rows.length; i++) {
 		var columns = rows[i].getElementsByTagName("td");
 		var sum = 0;
-		for (var j =0; j<collumns.length-1; j++) if (!isNaN(columns[j].innerHTML)) sum+= +columns[j];
+		for (var j =0; j<columns.length-1; j++) if (!isNaN(columns[j].innerHTML)) sum+= +columns[j];
 			columns[colums.length-1].innerHTML=sum;
 
 		if (sum %2 == 0) row[i].style.backgroundColor = "lightgray";
