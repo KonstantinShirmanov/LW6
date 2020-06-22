@@ -220,6 +220,8 @@ function precision (){
 }
 
 function changeColor (){
+
+	console.log("changed");
 	var colors = document.getElementsByName("backgroundColorList")[0];
 	var options = document.getElementsByTagName('option');
 	var text = options [colors.selectedIndex].innerHTML;
