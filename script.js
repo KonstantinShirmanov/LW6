@@ -324,6 +324,8 @@ function post (){
 }
 
 function calculate (){
+	console.log("yeyyy!");
+	/*
 	var a = +document.getElementById("first").text;
 	var b = +document.getElementById("second").text;
 	var c = +document.getElementById("third").text;
@@ -376,5 +378,6 @@ function calculate (){
 	}
 
 	document.getElementById(result).text = ""+res;
+	*/
 }
 
