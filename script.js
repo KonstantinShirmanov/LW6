@@ -340,7 +340,7 @@ function calculate (){
 	if (ops1 == "+") a = +document.getElementById("first").text;
 	else if (ops1=="-") a = -document.getElementById("first").text;
 	if (ops2 =="+"){
-	b = +document.getElementById("second").text;
+	
 	res += (a+b);
 }
 	else if (ops2 =="-"){
@@ -379,7 +379,7 @@ function calculate (){
 	res += (res*c);
 	}
 
-	document.getElementById(result).text = ""+res;
+	document.getElementById("result").text = ""+res;
 	
 }
 
