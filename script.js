@@ -326,7 +326,7 @@ function post (){
 }
 
 function calculate (){
-	console.log("yeyyy!");
+	alert("yeyyy!");
 	/*
 	var a = +document.getElementById("first").text;
 	var b = +document.getElementById("second").text;
